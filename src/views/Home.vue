@@ -21,7 +21,7 @@ const handleNewLocation = async (value) => {
 	isMapVisible.value = false
 	if(ipRegex.test(value)){
 		await ipStore.getInfoByIp(value)
-		console.log('ip');
+		
 	}else{
 		await ipStore.getInfoByDomain(value)
 	}

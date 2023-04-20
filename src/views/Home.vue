@@ -22,6 +22,7 @@ const handleNewLocation = async (value) => {
 	if(ipRegex.test(value)){
 		await ipStore.getInfoByIp(value)
 		
+		
 	}else{
 		await ipStore.getInfoByDomain(value)
 	}
